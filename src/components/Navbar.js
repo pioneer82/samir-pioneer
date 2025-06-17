@@ -39,7 +39,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -61,7 +61,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
+                // as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
@@ -71,7 +71,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
+                // as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
@@ -84,7 +84,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
+                // as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
@@ -94,11 +94,11 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
+                // href="https://soumyajitblogs.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <ImBlog style={{ marginBottom: "2px" }} /> Team
               </Nav.Link>
             </Nav.Item>
 
