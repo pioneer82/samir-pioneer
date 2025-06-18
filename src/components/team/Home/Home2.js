@@ -19,17 +19,14 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> TO OUR TEAM
             </h1>
             <p className="home-about-body">
-              I am a ambitious Full Stack developer seeking an opportunity to work with a team that can utilize my ability to produce creative solutions.
+              We are a two-person team combining business strategy and technical expertise to deliver high-quality projects for Japanese clients.
               <br />
-              I am fluent Mern Stack and Android.
               <br />
-              My field of Interest's are building new  Web Technologies and Products.
+              Our team is co-founded by Sho, who operates as  Japanese market lead, and Samir, who brings solid engineering skills to the table.
               <br />
-              I have successfully worked with a number of clients to define requirements, design new system elements, implement new functionalities and optimize existing systems.
               <br />
               Always create clean and expandable code.
               <br />
-              Still, I always learn new skills whenever I have the opportunity.
             </p>
           </Col>
           {/* <Col md={4} className="myAvtar">

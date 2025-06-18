@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
+import ReactOriginal from 'devicons-react/icons/ReactOriginal'
 import {
   DiJavascript1,
   DiReact,
@@ -28,14 +29,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <ReactOriginal size={70} />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiSolidity />

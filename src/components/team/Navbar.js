@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -7,6 +7,9 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { useSelector, useDispatch } from 'react-redux';
+import { languageChange } from '../../actions/LanguageChangeAction';
+
 import {
   AiFillStar,
   AiOutlineHome,
@@ -16,9 +19,12 @@ import {
 
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+function NavBar(props) {
+  const language = useSelector(state => state.language.language);
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+
+  const dispatch = useDispatch();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -27,8 +33,23 @@ function NavBar() {
       updateNavbar(false);
     }
   }
-
   window.addEventListener("scroll", scrollHandler);
+
+  useEffect(() => {
+    if (localStorage.getItem('zentech-language') === null)
+      localStorage.setItem('zentech-language', 'English');
+  }, [language])
+
+  const changeLanguageHandle = () => {
+    if (localStorage.getItem('zentech-language') === 'English') {
+      localStorage.setItem('zentech-language', 'Japanese');
+    }
+    else {
+      localStorage.setItem('zentech-language', 'English');
+    }
+    dispatch(languageChange({ type: 'LANGUAGECHANGE', currentLanguage: localStorage.getItem('zentech-language') }));
+
+  }
 
   return (
     <Navbar
@@ -55,17 +76,23 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "2px" }} />
+                {
+                  language === 'English' ? ' Home' : ' 家'
+                }
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                // as={Link}
+                as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "2px" }} />
+                {
+                  language === 'English' ? ' About' : 'について'
+                }
               </Nav.Link>
             </Nav.Item>
 
@@ -78,10 +105,12 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                {
+                  language === 'English' ? 'Projects' : 'プロジェクト'
+                }
               </Nav.Link>
             </Nav.Item>
-{/* 
+            {/* 
             <Nav.Item>
               <Nav.Link
                 // as={Link}
@@ -91,14 +120,16 @@ function NavBar() {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item> */}
-
             <Nav.Item>
               <Nav.Link
                 // href="https://soumyajitblogs.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Members
+                <ImBlog style={{ marginBottom: "2px" }} />
+                {
+                  language === "English" ? "Members" : 'メンバー'
+                }
               </Nav.Link>
             </Nav.Item>
 
@@ -110,6 +141,16 @@ function NavBar() {
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
                 <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
+            </Nav.Item>
+            <Nav.Item className="fork-btn">
+              <Button
+                className="fork-btn-inner"
+                onClick={() => changeLanguageHandle()}
+              >
+                {
+                  language === "English" ? "Japanese" : "English"
+                }
               </Button>
             </Nav.Item>
           </Nav>

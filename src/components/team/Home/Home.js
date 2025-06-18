@@ -4,8 +4,12 @@ import homeLogo from "../../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { useSelector } from 'react-redux';
 
 function Home() {
+  const language = useSelector(state => state.language.language);
+  const english = ['WE ARE', 'ZENTECH COLLECTIVE', 'DEVELOPERS']
+  const japanese = ['私たちは', 'ZENTECH共同開発', '者です']
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -14,15 +18,26 @@ function Home() {
           <Row>
             <Col md={12} className="home-header" style={{ textAlign: 'center' }}>
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
+                {
+                  language === 'English' ? 'Hi There! ' : 'やあ！ '
+                }
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-                WE ARE
-                <strong className="main-name"> ZENTECH COLLECTIVE</strong>
+                {
+                  language === 'English' ? english[0] : japanese[0]
+                }
+                <strong className="main-name">
+                  {
+                    language === 'English' ? english[1] : japanese[1]
+                  }
+                </strong>
+                {
+                  language === 'English' ? english[2] : japanese[2]
+                }
               </h1>
 
               <div style={{ padding: 50, textAlign: "center" }}>
