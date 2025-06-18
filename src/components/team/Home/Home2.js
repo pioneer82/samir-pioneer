@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -14,9 +14,9 @@ function Home2() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={12} className="home-about-description" style={{ textAlign: 'center' }}>
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="purple"> INTRODUCE </span> TO OUR TEAM
             </h1>
             <p className="home-about-body">
               I am a ambitious Full Stack developer seeking an opportunity to work with a team that can utilize my ability to produce creative solutions.
@@ -32,11 +32,11 @@ function Home2() {
               Still, I always learn new skills whenever I have the opportunity.
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          {/* <Col md={4} className="myAvtar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
