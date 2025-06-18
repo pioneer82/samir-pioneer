@@ -6,8 +6,11 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import { useSelector } from 'react-redux';
 
 function About() {
+  const language = useSelector(state => state.language.language);
+
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -22,7 +25,9 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">We are</strong>
+              {
+                language === 'English' ? <>Know Who <strong className="purple">We are</strong></> : <strong className="purple">私たちが誰なのかを知る</strong>
+              }
             </h1>
             <Aboutcard />
           </Col>
