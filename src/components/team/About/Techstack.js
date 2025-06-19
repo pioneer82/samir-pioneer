@@ -1,69 +1,88 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
-import ReactOriginal from 'devicons-react/icons/ReactOriginal'
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
+  SiCplusplus,
+  SiCsharp,
+  SiJavascript,
+  SiPython,
+  SiHtml5,
+  SiTailwindcss,
+  SiBootstrap,
+  SiGnubash,
+  SiPowershell,
+  SiMysql,
+  SiMongodb,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
   SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiVuedotjs,
+  SiAngular,
+  SiAndroid,
+  SiWordpress
+
+
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <SiCplusplus className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col> */}
-      <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <SiCsharp className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <ReactOriginal size={70} />
+        <SiJavascript className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <SiPython className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <SiHtml5 className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiTailwindcss className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <SiBootstrap className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiGnubash className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <SiPowershell className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
+        <SiMysql className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <SiMongodb className="skill-icon" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiReact className="skill-icon" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNodedotjs className="skill-icon" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiExpress className="skill-icon" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNextdotjs className="skill-icon" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVuedotjs className="skill-icon" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAngular className="skill-icon" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAndroid className="skill-icon" />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiWordpress className="skill-icon" />
       </Col>
     </Row>
   );

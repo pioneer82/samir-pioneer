@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../../Assets/about.png";
@@ -40,16 +39,20 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Our <strong className="purple">Skills </strong>
+          {
+            language === 'English' ? <>Our <strong className="purple">Skills </strong></> : <strong className="purple">私たちのスキル</strong>
+          }
+
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> We use
+          {
+            language === 'English' ? <><strong className="purple">Tools </strong> We use</> : <strong className="purple">私たちが使うツール</strong>
+          }
         </h1>
         <Toolstack />
-
         {/* <Github /> */}
       </Container>
     </Container>

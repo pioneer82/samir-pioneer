@@ -35,13 +35,13 @@ function AboutCard() {
               {
                 language === "English" ? english.map((item, key) =>
                   <>
-                    <li className="about-activity">
+                    <li className="about-activity" key={key}>
                       <ImPointRight /> {item}
                     </li>
                     <br /></>
                 ) : japanese.map((item, key) =>
                   <>
-                    <li className="about-activity">
+                    <li className="about-activity" key={key}>
                       <ImPointRight /> {item}
                     </li>
                     <br /></>

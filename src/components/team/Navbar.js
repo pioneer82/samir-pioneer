@@ -98,7 +98,7 @@ function NavBar(props) {
 
             <Nav.Item>
               <Nav.Link
-                // as={Link}
+                as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
