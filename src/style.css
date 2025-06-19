@@ -772,3 +772,7 @@ button:focus {
   width: 4vw !important;
   height: 4vw !important;
 }
+
+.member-name {
+  font-size: 2.5vw !important;
+}

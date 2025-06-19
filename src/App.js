@@ -5,7 +5,7 @@ import Home from "./components/team/Home/Home";
 import About from "./components/team/About/About";
 import Projects from "./components/team/Projects/Projects";
 import Footer from "./components/team/Footer";
-import Resume from "./components/team/Resume/ResumeNew";
+import SamirResume from "./components/team/Resume/SamirResume";
 import {
   BrowserRouter as Router,
   Route,
@@ -16,6 +16,7 @@ import ScrollToTop from "./components/team/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Members from "./components/team/Member/Members";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -38,7 +39,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/member" element={<Members />} />
+          <Route path="/resume/samir" element={<SamirResume />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />

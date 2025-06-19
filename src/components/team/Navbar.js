@@ -6,7 +6,7 @@ import logo from "../../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import { ImClubs } from "react-icons/im";
 import { useSelector, useDispatch } from 'react-redux';
 import { languageChange } from '../../actions/LanguageChangeAction';
 
@@ -16,8 +16,6 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar(props) {
   const language = useSelector(state => state.language.language);
@@ -73,6 +71,8 @@ function NavBar(props) {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
+
+          {/* home btn */}
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
@@ -83,6 +83,7 @@ function NavBar(props) {
               </Nav.Link>
             </Nav.Item>
 
+                {/* About for us btn */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -96,6 +97,8 @@ function NavBar(props) {
               </Nav.Link>
             </Nav.Item>
 
+
+                {/* our team projects btn */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -110,6 +113,7 @@ function NavBar(props) {
                 }
               </Nav.Link>
             </Nav.Item>
+
             {/* 
             <Nav.Item>
               <Nav.Link
@@ -120,22 +124,25 @@ function NavBar(props) {
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item> */}
+
+            {/* our team btn */}
             <Nav.Item>
               <Nav.Link
-                // href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/member"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} />
+                <ImClubs style={{ marginBottom: "2px" }} />
                 {
                   language === "English" ? "Members" : 'メンバー'
                 }
               </Nav.Link>
             </Nav.Item>
 
+                {/* samir git link */}
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                href="https://github.com/pioneer82/samir-pioneer"
                 target="_blank"
                 className="fork-btn-inner"
               >
@@ -143,6 +150,8 @@ function NavBar(props) {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+
+            {/* language change btn */}
             <Nav.Item className="fork-btn">
               <Button
                 className="fork-btn-inner"
