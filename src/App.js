@@ -6,6 +6,7 @@ import About from "./components/team/About/About";
 import Projects from "./components/team/Projects/Projects";
 import Footer from "./components/team/Footer";
 import SamirResume from "./components/team/Resume/SamirResume";
+import TomResume from "./components/team/Resume/TomResume";
 import {
   BrowserRouter as Router,
   Route,
@@ -41,6 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/member" element={<Members />} />
           <Route path="/resume/samir" element={<SamirResume />} />
+          <Route path="/resume/tom" element={<TomResume />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
