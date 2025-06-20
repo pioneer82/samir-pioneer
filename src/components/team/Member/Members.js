@@ -32,7 +32,7 @@ const members = [
     email: "pioneer200082@gmail.com",
     telegram: "@pioneer_82",
     resumeLink: "/resume/samir",
-    website: "#", // Replace with actual URL if available
+    website: "https://pioneer-samir.vercel.app/", // Replace with actual URL if available
   }
 ];
 
