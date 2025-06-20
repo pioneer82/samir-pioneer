@@ -5,44 +5,38 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { useSelector } from 'react-redux';
 
-function ProjectCards(props) {
+function ProjectCards({ title, imgPath, description, ghLink, demoLink, isBlog }) {
   const language = useSelector(state => state.language.language);
 
   return (
     <Card className="project-card-view">
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+        <Card.Title>{title}</Card.Title>
+        <Card.Img variant="top" src={imgPath} alt="card-img" />
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          {description}
         </Card.Text>
-        {
-          props.ghLink === "" ? <></> : <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {"GitHub"}
+        {ghLink && (
+          <Button variant="primary" href={ghLink} target="_blank">
+            <BsGithub /> &nbsp;GitHub
           </Button>
-        }
-
+        )}
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
+        {!isBlog && demoLink && (
           <Button
             variant="primary"
-            href={props.demoLink}
+            href={demoLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {
-              language === "English" ? "Demo" : "デモ"
-            }
+            {language === "English" ? "Demo" : "デモ"}
           </Button>
         )}
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

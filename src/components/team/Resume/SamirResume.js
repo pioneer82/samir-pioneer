@@ -9,26 +9,32 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function SamirResume() {
-  const [width, setWidth] = useState(1200);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const renderDownloadButton = () => (
+    <Button
+      variant="primary"
+      href={pdf}
+      target="_blank"
+      style={{ maxWidth: "250px" }}
+    >
+      <AiOutlineDownload />
+      &nbsp;Download CV
+    </Button>
+  );
 
   return (
     <div>
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+          {renderDownloadButton()}
         </Row>
 
         <Row className="resume">
@@ -38,15 +44,7 @@ function SamirResume() {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+          {renderDownloadButton()}
         </Row>
       </Container>
     </div>

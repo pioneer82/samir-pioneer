@@ -7,6 +7,21 @@ import laptopImg from "../../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import { useSelector } from 'react-redux';
 
+const TITLES = {
+  about: {
+    English: <>Know Who <strong className="purple">We are</strong></>,
+    Japanese: <strong className="purple">私たちが誰なのかを知る</strong>
+  },
+  skills: {
+    English: <>Our <strong className="purple">Skills </strong></>,
+    Japanese: <strong className="purple">私たちのスキル</strong>
+  },
+  tools: {
+    English: <><strong className="purple">Tools </strong> We use</>,
+    Japanese: <strong className="purple">私たちが使うツール</strong>
+  }
+};
+
 function About() {
   const language = useSelector(state => state.language.language);
 
@@ -24,9 +39,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              {
-                language === 'English' ? <>Know Who <strong className="purple">We are</strong></> : <strong className="purple">私たちが誰なのかを知る</strong>
-              }
+              {TITLES.about[language] || TITLES.about.English}
             </h1>
             <Aboutcard />
           </Col>
@@ -39,18 +52,11 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          {
-            language === 'English' ? <>Our <strong className="purple">Skills </strong></> : <strong className="purple">私たちのスキル</strong>
-          }
-
+          {TITLES.skills[language] || TITLES.skills.English}
         </h1>
-
         <Techstack />
-
         <h1 className="project-heading">
-          {
-            language === 'English' ? <><strong className="purple">Tools </strong> We use</> : <strong className="purple">私たちが使うツール</strong>
-          }
+          {TITLES.tools[language] || TITLES.tools.English}
         </h1>
         <Toolstack />
         {/* <Github /> */}

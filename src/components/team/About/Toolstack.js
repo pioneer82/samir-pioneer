@@ -9,27 +9,23 @@ import {
   SiGithub
 } from "react-icons/si";
 
+const TOOL_ICONS = [
+  SiVisualstudiocode,
+  SiPostman,
+  SiSlack,
+  SiVercel,
+  SiAndroidstudio,
+  SiGithub
+];
+
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiAndroidstudio />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiGithub />
-      </Col>
+      {TOOL_ICONS.map((Icon, idx) => (
+        <Col xs={4} md={2} className="tech-icons" key={idx}>
+          <Icon />
+        </Col>
+      ))}
     </Row>
   );
 }
