@@ -11,11 +11,11 @@ const CONTENT = {
       </>
     ),
     details: [
-      'We are a small but highly flexible team based in Japan.',
-      'Samir is an experienced engineer who handles all technical aspects and implements high-quality code.',
-      'Sho focuses on client communication and local operations to ensure smooth delivery for Japanese clients.',
-      'Together, we aim to build trust with clients and expand our services in the Japanese market.',
-      "Top-class global development power, delivered quickly with full Japanese support."
+      'We are Zentech Collective - a small but flexible development team based in Japan.',
+      'Samir is a skilled engineer who has been building his career since the age of 15 and is in charge of the technical side, delivering high-quality code.',
+      'Sho is in charge of communicating with Japanese customers and managing project progress, providing smooth and reliable support.',
+      'By combining world-class development capabilities with the detailed response capabilities unique to Japan, we will support our customers businesses as a reliable partner.',
+      "'Top-class development capabilities from overseas, speedy support in Japanese' That is our founding philosophy."
     ]
   },
   Japanese: {
@@ -25,10 +25,11 @@ const CONTENT = {
       </>
     ),
     details: [
-      '私たちは日本を拠点とする小規模ながらも非常に柔軟性のあるチームです。',
-      'Samir は、あらゆる技術的側面を担当し、高品質のコードを実装する経験豊富なエンジニアです。',
-      'Sho は、日本のクライアントへのスムーズなサービス提供を確実にするために、クライアントとのコミュニケーションと現地での業務に重点を置いています。',
-      '私たちは共に、お客様との信頼関係を構築し、日本市場でのサービス拡大を目指します。'
+      "私たちは Zentech Collective ― 日本を拠点に活動する、少数精鋭の柔軟な開発チームです。",
+      "Samir は15歳からキャリアを積んだ実力派エンジニアとして技術面を担当し、品質の高いコードをお届けします。",
+      "Sho は日本のお客様とのやり取りやプロジェクトの進行管理を担当し、スムーズで安心感のあるサポートを実現します。",
+      "世界基準の開発力と、日本ならではのきめ細やかな対応力を両立することで、信頼できるパートナーとしてお客様のビジネスを支えていきます。",
+      "「海外トップクラスの開発力を、日本語対応でスピーディに」 それが私たちの設立理念です。"
     ]
   }
 };

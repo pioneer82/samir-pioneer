@@ -19,22 +19,22 @@ const NAV_ITEMS = [
   {
     to: "/",
     icon: <AiOutlineHome style={{ marginBottom: "2px" }} />,
-    label: { English: " Home", Japanese: " 家" }
+    label: " Home"
   },
   {
     to: "/about",
     icon: <AiOutlineUser style={{ marginBottom: "2px" }} />,
-    label: { English: " About", Japanese: "について" }
+    label: " About"
   },
   {
     to: "/project",
     icon: <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }} />,
-    label: { English: "Projects", Japanese: "プロジェクト" }
+    label: " Projects"
   },
   {
     to: "/member",
     icon: <ImClubs style={{ marginBottom: "2px" }} />,
-    label: { English: "Members", Japanese: "メンバー" }
+    label: " Members"
   }
 ];
 
@@ -87,7 +87,7 @@ function NavBar() {
               <Nav.Item key={idx}>
                 <Nav.Link as={Link} to={item.to} onClick={() => setExpand(false)}>
                   {item.icon}
-                  {item.label[language]}
+                  {item.label}
                 </Nav.Link>
               </Nav.Item>
             ))}

@@ -4,27 +4,26 @@ import { useSelector } from 'react-redux';
 
 const CONTENTS = {
   English: [
-    "We are a small, elite development team consisting of a bilingual team leader with deep insight into business in both Japanese and English, and a highly skilled engineer who has been building his career in Sweden since the age of 15 and has over five years of practical experience.",
-    "Our strengths lie not only in the technical skills honed under a strict merit- based environment overseas, but also in our three pillars: strict adherence to deadlines, polite and prompt communication, and smooth interactions in Japanese.",
-    "This allows us to bring our clients’ ideas to life in the shortest time possible.",
-    "With the flexibility and speed to handle projects both domestically and internationally, we are uniquely positioned to lead your project to success from the development side."
+    "We are a small but elite development team consisting of a bilingual Japanese-English team leader with a deep understanding of business and an engineer who started his career in Sweden at the age of 15 and has over 5 years of practical experience.",
+    "We utilize the high technical skills honed in a meritocratic overseas environment to provide high-quality code that is scalable and easy to read, and satisfies our clients.",
+    "In addition to our 'technical skills', we also have three strengths: strict adherence to deadlines, polite and prompt responses, and smooth communication in Japanese, and we will realize our clients' 'want' in the shortest possible time.",
+    "We put our customers' requests first, strive to communicate in a way that satisfies them 150%, and lead projects to success flexibly and quickly, both domestically and overseas."
   ],
   Japanese: [
-    '私たちは、ビジネス戦略と技術的専門知識を組み合わせて、日本のクライアントに高品質のプロジェクトを提供する2人組のチームです。',
-    '私たちのチームは、日本市場のリーダーを務める Sho と、確かなエンジニアリング スキルを持つ Samir によって共同設立されました。',
-    '常にクリーンかつ拡張可能なコードを作成してください。',
-    '私たちのチームは、ブログ、ポートフォリオ、eコマース、ビジネスウェブサイト、ランディングページ、トレーニング、プロジェクトデザイナーなどを行うのに十分な能力と資格を持っています。',
-    '当社チームはお客様のご要望を尊重し、お客様のニーズを100%満たすために最善を尽くします。'
+    "私たちは、日英バイリンガルでビジネスへの理解が深いチームリーダーと、スウェーデンで15歳からキャリアを積み、5年以上の実務経験を持つエンジニアで構成された、少数精鋭の開発チームです。",
+    "海外の実力主義の環境で磨き上げた高い技術力を活かし、拡張性や可読性に優れた、クライアント様にご満足いただける高品質なコードを提供しています。",
+    "さらに、私たちは「技術力」だけでなく、納期厳守・丁寧かつ迅速なレスポンス・日本語での円滑なコミュニケーションの3つを強みとしており、クライアント様の「こうして欲しい」を最短距離で形にします。",
+    "お客様のご要望を第一に考え、150%ご満足いただけるようなコミュニケーションを心がけ、国内外問わず、柔軟かつスピーディーにプロジェクトを成功へと導きます。"
   ]
 };
 
 const TITLES = {
   English: (
     <div>
-      LET ME<span className="purple"> INTRODUCE </span> TO OUR TEAM
+      What is<span className="purple"> ZenTech Collective </span> ?
     </div>
   ),
-  Japanese: <span className="purple">私たちのチームをご紹介します</span>
+  Japanese: <div><span className="purple">ZenTech Collective</span> とは？</div>
 };
 
 function Home2() {
@@ -49,13 +48,6 @@ function Home2() {
               ))}
             </p>
           </Col>
-          {/* 
-          <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col> 
-          */}
         </Row>
       </Container>
     </Container>
