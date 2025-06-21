@@ -7,42 +7,41 @@ import { Link } from "react-router-dom";
 
 const memberContents = [
   {
-    name: { English: "Sho Maruono", Japanese: "丸尾野翔" },
+    name: { English: "Sho Maruono", Japanese: "丸小野 笙" },
     email: "axyameofficial092@gmail.com",
     telegram: "@Tom_jpdev",
     resumeLink: "/resume/tom",
     website: "#",
     engContent: [
-      "I am a bilingual multi-creator who has been involved in launching various projects such as advertising services, matching apps, chat applications, and crowdfunding-related businesses.",
-      "I have hands-on experience handling everything from planning and development to marketing, and I am committed to delivering results with speed and reliability.",
-      "“Quick responses to even the smallest questions and flexible support even at night” — this is the foundation of my trust.",
-      "If you need any support or have any questions, feel free to contact me anytime!",
+      "I'm a bilingual multi-creator who has been involved in launching advertising services, matching apps, crowdfunding-related businesses, and more.",
+      "I've been involved in everything from planning to development and marketing, and my motto is to ensure speed and reliability while producing results.",
+      "I try to keep this in mind as I carry out my daily work: <Responding immediately to even the smallest questions, and being flexible in adjusting to accommodate night-time hours.>",
+      "If you need any support or advice, please feel free to contact me at any time.",
     ],
     japContent: [
-      "私は、広告サービス、マッチングアプリ、チャットアプリ、クラウドファンディング関連事業など、様々なプロジェクトの立ち上げに携わってきたバイリンガルのマルチクリエイターです。",
-      "企画から開発、マーケティングまでを手掛けた実務経験があり、スピードと確実性をもって結果を出すことにコミットしています。",
-      "「小さな質問にも迅速に対応し、夜間でも柔軟にサポートする」—これが私の信頼の基盤です。",
-      "サポートが必要な場合や質問がある場合は、いつでもお気軽にご連絡ください！"
+      "私はこれまで、広告サービス、マッチングアプリ、クラウドファンディング関連事業などの立ち上げに携わってきた、バイリンガル兼マルチクリエイターです。",
+      "これまで、企画から開発、マーケティングまでを一貫して経験しており、スピードと信頼性を担保しつつ結果を出すことをモットーにしております。",
+      "「小さな質問でも即レス、夜間対応も柔軟に調節」― これを心がけ日々の業務を行なっております。",
+      "サポートや相談が必要でしたら、気軽にいつでもお声がけください。"
     ]
   },
   {
-    name: { English: "Samir Barker", Japanese: "サミール・バーカー" },
+    name: { English: "Samir Barker", Japanese: "Samir Barker" },
     email: "pioneer200082@gmail.com",
     telegram: "@pioneer_82",
     resumeLink: "/resume/samir",
     website: "https://pioneer-samir.vercel.app/",
     engContent: [
-      "I am a full stack developer with 5+ years of development experience.",
-      "I have a wealth of experience developing various projects including Business, Blog, and E-commerce.",
-      "I am always prepared and do everything to 100% meet the needs of new customers, and I am still constantly learning new technologies.",
-      "I am always ready to help you with your projects.",
-      "If you need any support or have any questions, feel free to contact me anytime!",
+      "I have over 5 years of development experience as a full-stack engineer.",
+      "I have been involved in the development of a variety of projects, including business websites, blogs, and e-commerce sites.",
+      "I am always prepared and committed to learning new technologies in order to fully meet my customers' needs.",
+      "I will do my best to support any project, so please feel free to contact me at any time if you need any help.",
     ],
     japContent: [
-      "私は 5 年以上の開発経験を持つフルスタック開発者です。",
-      "私はビジネス、ブログ、Eコマースなど、さまざまなプロジェクトの開発において豊富な経験を持っています。",
-      "私は常に準備を整え、新規顧客のニーズに100％応えられるよう全力を尽くしており、現在も新しい技術を継続的に学んでいます。",
-      "何かお手伝いが必要でしたら、いつでもご連絡ください。",
+      "私はフルスタックエンジニアとして5年以上の開発経験があります。",
+      "これまでに、ビジネスサイト、ブログ、ECサイトなど、さまざまなプロジェクトの開発に携わってきました。",
+      "お客様のご要望に100%お応えするために、常に準備を怠らず、新しい技術の習得にも力を入れています。",
+      "どんなプロジェクトでも全力でサポートさせていただきますので、少しでもお困りのことがありましたら、いつでもお気軽にご相談ください。",
     ]
   }
 ];

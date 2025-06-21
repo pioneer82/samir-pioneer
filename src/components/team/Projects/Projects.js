@@ -14,10 +14,10 @@ const PROJECTS = [
   {
     imgPath: chatify,
     isBlog: false,
-    title: { English: "Chat app & chatbot development", Japanese: "チャティファイ" },
+    title: { English: "Chat app & chatbot development", Japanese: "チャットアプリ・チャットボット開発" },
     description: {
-      English: <>Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages.<br /></>,
-      Japanese: <>react.js、Material-UI、Firebaseを使用して構築された、リソースを共有したり、友人と交流したりするための個人チャットルームまたはワークスペースです。リアルタイムメッセージング、画像共有、メッセージへのリアクション機能などを備えています。<br /></>
+      English: <>This is a personal chat room (workspace) developed using React.js, Material-UI, and Firebase, where you can connect with friends and share resources. It is equipped with features such as real-time message sending, image sharing, and message reaction functions.<br /><br /></>,
+      Japanese: <>React.js、Material-UI、Firebaseを活用して開発した、友人とつながったりリソースを共有できる個人チャットルーム(ワークスペース)です。 リアルタイムでのメッセージ送信、画像の共有、メッセージへのリアクション機能などが搭載されております。<br /><br /></>
     },
     ghLink: "https://github.com/pioneer82/Chatify",
     demoLink: "https://chatify-49.web.app/"
@@ -25,10 +25,10 @@ const PROJECTS = [
   {
     imgPath: business,
     isBlog: false,
-    title: { English: "Company websites and landing page creation", Japanese: "仕事" },
+    title: { English: "HP/LP Production", Japanese: "HP・LP制作" },
     description: {
-      English: <>The site is actually a vacation rental website built using Lodgify, a popular platform for short-term lodging (like Airbnbs, B&Bs, villas, etc.).It's based on the “Tideway” template, one of Lodgify’s ready-made designs suited for rental properties.<br /><br /></>,
-      Japanese: <>このサイトは、短期宿泊（Airbnb、B&B、ヴィラなど）向けの人気プラットフォームであるLodgifyを使用して構築されたバケーションレンタルウェブサイトです。Lodgifyのレンタル物件に適した既製デザインの1つである「Tideway」テンプレートをベースにしています。<br /><br /></>
+      English: <>This is a booking site created using Lodgify, a popular short-term accommodation platform. It is based on Lodgify's "Tideway" template, which is compatible with Airbnb, B&B, villas, etc.<br /><br /><br /></>,
+      Japanese: <>Lodgifyという人気の短期宿泊プラットフォームを使って作った予約サイトです。 AirbnbやB&B、ヴィラなどに対応したLodgifyの「Tideway」というテンプレートをベースに制作しています。<br /><br /><br /></>
     },
     ghLink: "",
     demoLink: "https://tideway-bnb.lodgify.com/"
@@ -36,10 +36,10 @@ const PROJECTS = [
   {
     imgPath: blog,
     isBlog: false,
-    title: { English: "Blog & owned media site building", Japanese: "ブログ" },
+    title: { English: "Blog/Owned Media Site Construction", Japanese: "ブログ・オウンドメディアサイト構築" },
     description: {
-      English: "Dribbble is more than a portfolio site—it's a multifaceted creative ecosystem featuring flagship art posts, robust social engagement, talent hiring tools, and professional growth options. It’s one of the top platforms for designers to present their work, connect, and build their career.",
-      Japanese: "Dribbbleは単なるポートフォリオサイトではありません。フラッグシップアートの投稿、強力なソーシャルエンゲージメント、人材採用ツール、そしてプロフェッショナルとしての成長を支援するオプションを備えた、多面的なクリエイティブエコシステムです。デザイナーが作品を発表し、交流し、キャリアを築くための最高のプラットフォームの一つです。"
+      English: "Dribbble is not just a portfolio site, it is a platform where a diverse creative world unfolds. With posts of masterpieces, active interaction between creators, support for recruiting talented people, and opportunities for professional growth, it is a top-class place for designers to present their work, expand their network, and build their careers.",
+      Japanese: "Dribbbleはただのポートフォリオサイトではなく、多彩なクリエイティブの世界が広がるプラットフォームです。 代表作の投稿やクリエイター同士の活発な交流、優秀な人材の採用支援、プロとしての成長機会などが全て揃っており、 デザイナーが作品を発表し、人脈を広げ、キャリアを築くためのトップクラスの場となっております。"
     },
     ghLink: "",
     demoLink: "https://dribbble.com/"
@@ -47,10 +47,10 @@ const PROJECTS = [
   {
     imgPath: ecommerce,
     isBlog: false,
-    title: { English: "E-commerce site development (Shopify, etc. supported)", Japanese: "電子商取引" },
+    title: { English: "E-commerce website production (also compatible with Shopify)", Japanese: "ECサイト制作(Shopifyも対応)" },
     description: {
-      English: "Contains just under 300 items (295 at last count), combining individual UI elements (like shopping carts, product galleries, modals) and complete website showcases that have been awarded or featured. Acts as a design inspiration hub, offering interactive previews (videos, screenshots), filters by category/technology, and beautifully crafted examples ideal for UI/UX designers.",
-      Japanese: "300点弱（最終集計時点では295点）のアイテムを収録。ショッピングカート、商品ギャラリー、モーダルといった個々のUI要素と、受賞歴や特集記事で紹介されたウェブサイトのショーケースを組み合わせた構成となっています。インタラクティブなプレビュー（動画、スクリーンショット）、カテゴリー／テクノロジーによるフィルター、そしてUI/UXデザイナーに最適な美しく仕上げられたサンプルなど、デザインのインスピレーションハブとして機能します。"
+      English: <>This is an e-commerce website that offers a wide range of products, from individual UI parts such as shopping carts, product galleries, and modal windows to award-winning, highly-finished website examples. It is a treasure trove of design inspiration for UI/UX designers, and you can purchase beautiful, sophisticated samples with interactive previews with videos and screenshots, and filtering by category and technology.<br /><br /><br /><br /></>,
+      Japanese: <>約300点(直近のカウントでは295点)のアイテムを取り扱っており、ショッピングカートや商品ギャラリー、モーダルウィンドウなどの個別のUIパーツから、受賞歴のある完成度の高いウェブサイトの実例まで幅広く揃えたECサイトです。UI/UXデザイナーにとってのデザインインスピレーションの宝庫であり、動画やスクリーンショットによるインタラクティブなプレビュー、カテゴリや技術別の絞り込み機能を備えた、美しく洗練されたサンプルを購入することが可能です。</>
     },
     ghLink: "",
     demoLink: "https://www.hubspot.de/products/cms/e-commerce-website"
@@ -58,10 +58,10 @@ const PROJECTS = [
   {
     imgPath: reservation,
     isBlog: false,
-    title: { English: "Reservation & membership management systems", Japanese: "予約" },
+    title: { English: "Reservation and Membership Management System Development", Japanese: "予約・会員管理システム開発" },
     description: {
-      English: <>Hostelworld is a trusted go-to platform for booking low-cost, shared accommodation worldwide. It's optimized for finding very affordable stays with a social vibe, especially useful for solo and young travelers. The inclusion of real reviews, chat features, and deposit-based booking makes it both practical and community-focused.<br /><br /></>,
-      Japanese: <>Hostelworldは、世界中の低価格なシェアハウスを予約できる、信頼できるプラットフォームです。ソーシャルな雰囲気の中で、非常に手頃な価格の宿泊施設を見つけるのに最適化されており、特に一人旅や若い旅行者に便利です。リアルなレビュー、チャット機能、デポジット制の予約システムなど、実用性とコミュニティ重視の要素を兼ね備えています。<br /><br /><br /></>
+      English: <>Hostelworld is a reliable platform where you can book low-cost shared accommodations around the world. It is especially popular with solo travelers and young people, and makes it easy to find affordable accommodation where you can enjoy socializing. In addition to the reservation function, it also has real reviews, a chat function, and a reservation system using balance, making it both practical and community-oriented.<br /><br /><br /><br /></>,
+      Japanese: <>Hostelworldは、世界中の低価格帯の共同宿泊施設を予約できる信頼性の高いプラットフォームです。特に一人旅や若い世代の方に人気で、手頃な価格で交流を楽しめる宿泊先を簡単に見つけられます。予約機能に加え、実際の口コミやチャット機能、残高を使った予約システムを備えており、実用性とコミュニティ性を兼ね備えています。<br /><br /><br /></>
     },
     ghLink: "",
     demoLink: "https://www.hostelworld.com/"
@@ -69,10 +69,10 @@ const PROJECTS = [
   {
     imgPath: emotion,
     isBlog: false,
-    title: { English: "Face Recognition and Emotion Detection", Japanese: "顔認識と感情検出" },
+    title: { English: "Facial Recognition/Emotion Detection", Japanese: "顔認証・感情検出" },
     description: {
-      English: <>Extensive inventory of hostels, tailored to social, budget travelers, especially solo backpackers. Generally safe and reliable, with a secure payment gateway and transparent policies.<br /><br /><br /></>,
-      Japanese: <>ソーシャルな旅、低予算の旅行者、特に一人旅のバックパッカーに最適なホステルを豊富に取り揃えています。安全な決済システムと透明性のあるポリシーを備え、概ね安全で信頼性が高く、安心してご利用いただけます。<br /><br /><br /><br /><br /></>
+      English: <>This system is equipped with the latest facial recognition technology and emotion detection functions. It accurately recognizes the user's facial expressions and emotions in real time, helping to provide a more personalized experience and improve security. In addition, by analyzing changes in emotions, it is possible to understand customer satisfaction and reactions, and use this information for service improvement and marketing. It is a next-generation technology that combines high accuracy and ease of use and is expected to be introduced in a variety of industries.</>,
+      Japanese: <>最新の顔認証技術と感情検出機能を搭載したシステムです。リアルタイムでユーザーの表情や感情を正確に認識し、よりパーソナライズされた体験やセキュリティ向上に役立ちます。また、感情の変化を解析することで、顧客の満足度や反応を把握し、サービス改善やマーケティングにも活用可能となっております。高い精度と使いやすさを両立し、さまざまな業界での導入が期待される次世代テクノロジーです。</>
     },
     ghLink: "https://github.com/soumyajit4419/Face_And_Emotion_Detection",
     demoLink: "" // Add demo link if available
