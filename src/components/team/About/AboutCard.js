@@ -5,11 +5,6 @@ import { useSelector } from 'react-redux';
 
 const CONTENT = {
   English: {
-    intro: (
-      <>
-        <ImPointRight /> Hi Everyone, We are <span className="purple">Zentech Collective </span> developers.
-      </>
-    ),
     details: [
       'We are Zentech Collective - a small but flexible development team based in Japan.',
       'Samir is a skilled engineer who has been building his career since the age of 15 and is in charge of the technical side, delivering high-quality code.',
@@ -43,7 +38,6 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <ul style={{ textAlign: "justify" }}>
-            <li className="about-activity">{intro}</li>
             <br />
             {details.map((item, key) => (
               <React.Fragment key={key}>
