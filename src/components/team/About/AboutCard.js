@@ -14,11 +14,6 @@ const CONTENT = {
     ]
   },
   Japanese: {
-    intro: (
-      <>
-        <ImPointRight /> みなさんこんにちは。私たちは <span className="purple">Zentech Collective </span> の開発者です。
-      </>
-    ),
     details: [
       "私たちは Zentech Collective ― 日本を拠点に活動する、少数精鋭の柔軟な開発チームです。",
       "Samir は15歳からキャリアを積んだ実力派エンジニアとして技術面を担当し、品質の高いコードをお届けします。",
