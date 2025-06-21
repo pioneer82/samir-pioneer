@@ -3,10 +3,8 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import { useSelector } from 'react-redux';
 
 function ProjectCards({ title, imgPath, description, ghLink, demoLink, isBlog }) {
-  const language = useSelector(state => state.language.language);
 
   return (
     <Card className="project-card-view">
@@ -31,7 +29,7 @@ function ProjectCards({ title, imgPath, description, ghLink, demoLink, isBlog })
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {language === "English" ? "Demo" : "デモ"}
+            Demo
           </Button>
         )}
       </Card.Body>

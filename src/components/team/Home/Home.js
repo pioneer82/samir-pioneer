@@ -3,22 +3,16 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { useSelector } from 'react-redux';
 
 const TEXT = {
   English: {
     greeting: "Hi There! ",
     parts: ['WE ARE', ' ZENTECH COLLECTIVE ', 'DEVELOPERS']
   },
-  Japanese: {
-    greeting: "やあ！ ",
-    parts: ['私たちは', 'ZENTECH共同開発', '者です']
-  }
 };
 
 function Home() {
-  const language = useSelector(state => state.language.language);
-  const { greeting, parts } = TEXT[language] || TEXT.English;
+  const { greeting, parts } = TEXT.English;
 
   return (
     <section>

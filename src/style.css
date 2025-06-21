@@ -153,8 +153,8 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 3.4em !important;
+  width: 3.4em !important;
 }
 
 .navbar-nav .nav-link {
@@ -558,6 +558,14 @@ button:focus {
   padding-top: 10px !important;
 }
 
+.members-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important;
+}
+
 /* --------- */
 /* About */
 /* --------- */
@@ -572,7 +580,7 @@ button:focus {
 
 .tech-icons {
   font-size: 4.5em !important;
-  margin: 15px !important;
+  margin: 5px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
   border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
@@ -587,7 +595,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .tech-icons {
-    margin: 10px !important;
+    margin: 2px !important;
   }
 }
 

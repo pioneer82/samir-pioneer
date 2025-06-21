@@ -87,16 +87,10 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          {language === 'English'
-            ? <>Our Recent <strong className="purple">Project </strong></>
-            : <strong className="purple">最近のプロジェクト</strong>
-          }
+          Our Recent <strong className="purple">Project </strong>
         </h1>
         <p style={{ color: "white" }}>
-          {language === 'English'
-            ? 'Here are a few projects we have worked on recently.'
-            : '私たちが最近取り組んだプロジェクトをいくつかご紹介します。'
-          }
+          Here are a few projects we have worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {PROJECTS.map((project, idx) => (

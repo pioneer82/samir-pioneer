@@ -9,16 +9,13 @@ import { useSelector } from 'react-redux';
 
 const TITLES = {
   about: {
-    English: <>Know Who <strong className="purple">We are</strong></>,
-    Japanese: <strong className="purple">私たちが誰なのかを知る</strong>
+    English: <>Know Who <strong className="purple">We are</strong></>
   },
   skills: {
-    English: <>Our <strong className="purple">Skills </strong></>,
-    Japanese: <strong className="purple">私たちのスキル</strong>
+    English: <>Our <strong className="purple">Skills </strong></>
   },
   tools: {
-    English: <><strong className="purple">Tools </strong> We use</>,
-    Japanese: <strong className="purple">私たちが使うツール</strong>
+    English: <><strong className="purple">Tools </strong> We use</>
   }
 };
 
@@ -39,7 +36,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              {TITLES.about[language] || TITLES.about.English}
+              {TITLES.about.English}
             </h1>
             <Aboutcard />
           </Col>

@@ -4,6 +4,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
+import Particle from "../Particle";
 
 const memberContents = [
   {
@@ -72,7 +73,7 @@ function MemberCard({ member, language }) {
             </h5>
           </Card.Text>
           <Button variant="primary" as={Link} to={member.resumeLink}>
-            {language === "English" ? "Resume" : "再開する"}
+            Resume
           </Button>
           {"\n"}
           {"\n"}
@@ -83,7 +84,7 @@ function MemberCard({ member, language }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {language === "English" ? "Visit WebSite" : "ウェブサイトを訪問"}
+            Visit WebSite
           </Button>
         </Card.Body>
       </Card>
@@ -95,7 +96,8 @@ function Members() {
   const language = useSelector(state => state.language.language);
 
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="about-section">
+      <Particle />
       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         {memberContents.map((member, idx) => (
           <MemberCard

@@ -3,6 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import logo from "../../Assets/logo.png";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImClubs } from "react-icons/im";
@@ -71,7 +72,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+          <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
