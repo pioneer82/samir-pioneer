@@ -26,7 +26,7 @@ const CONTENT = {
 
 function AboutCard() {
   const language = useSelector(state => state.language.language);
-  const { intro, details } = CONTENT[language] || CONTENT.English;
+  const { details } = CONTENT[language] || CONTENT.English;
 
   return (
     <Card className="quote-card-view">
