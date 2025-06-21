@@ -5,38 +5,50 @@ import Button from "react-bootstrap/Button";
 import { useSelector } from 'react-redux';
 import { Link } from "react-router-dom";
 
-const samirEngContent = [
-  "I am a full stack developer with 5+ years of development experience.",
-  "I have a wealth of experience developing various projects including Business, Blog, and E-commerce.",
-  "I am always prepared and do everything to 100% meet the needs of new customers, and I am still constantly learning new technologies.",
-  "If you need any help from me, please contact me at any time."
-];
-
-const samirJapContent = [
-  "私は 5 年以上の開発経験を持つフルスタック開発者です。",
-  "私はビジネス、ブログ、Eコマースなど、さまざまなプロジェクトの開発において豊富な経験を持っています。",
-  "私は常に準備を整え、新規顧客のニーズに100％応えられるよう全力を尽くしており、現在も新しい技術を継続的に学んでいます。",
-  "何かお手伝いが必要でしたら、いつでもご連絡ください。",
-];
-
-const members = [
+const memberContents = [
   {
     name: { English: "Sho Maruono", Japanese: "丸尾野翔" },
-    email: "",
-    telegram: "",
-    resumeLink: "/resume/samir",
-    website: "#", // Replace with actual URL if available
+    email: "axyameofficial092@gmail.com",
+    telegram: "@Tom_jpdev",
+    resumeLink: "/resume/tom",
+    website: "#",
+    engContent: [
+      "I am a bilingual multi-creator who has been involved in launching various projects such as advertising services, matching apps, chat applications, and crowdfunding-related businesses.",
+      "I have hands-on experience handling everything from planning and development to marketing, and I am committed to delivering results with speed and reliability.",
+      "“Quick responses to even the smallest questions and flexible support even at night” — this is the foundation of my trust.",
+      "If you need any support or have any questions, feel free to contact me anytime!",
+    ],
+    japContent: [
+      "私は、広告サービス、マッチングアプリ、チャットアプリ、クラウドファンディング関連事業など、様々なプロジェクトの立ち上げに携わってきたバイリンガルのマルチクリエイターです。",
+      "企画から開発、マーケティングまでを手掛けた実務経験があり、スピードと確実性をもって結果を出すことにコミットしています。",
+      "「小さな質問にも迅速に対応し、夜間でも柔軟にサポートする」—これが私の信頼の基盤です。",
+      "サポートが必要な場合や質問がある場合は、いつでもお気軽にご連絡ください！"
+    ]
   },
   {
     name: { English: "Samir Barker", Japanese: "サミール・バーカー" },
     email: "pioneer200082@gmail.com",
     telegram: "@pioneer_82",
     resumeLink: "/resume/samir",
-    website: "https://pioneer-samir.vercel.app/", // Replace with actual URL if available
+    website: "https://pioneer-samir.vercel.app/",
+    engContent: [
+      "I am a full stack developer with 5+ years of development experience.",
+      "I have a wealth of experience developing various projects including Business, Blog, and E-commerce.",
+      "I am always prepared and do everything to 100% meet the needs of new customers, and I am still constantly learning new technologies.",
+      "I am always ready to help you with your projects.",
+      "If you need any support or have any questions, feel free to contact me anytime!",
+    ],
+    japContent: [
+      "私は 5 年以上の開発経験を持つフルスタック開発者です。",
+      "私はビジネス、ブログ、Eコマースなど、さまざまなプロジェクトの開発において豊富な経験を持っています。",
+      "私は常に準備を整え、新規顧客のニーズに100％応えられるよう全力を尽くしており、現在も新しい技術を継続的に学んでいます。",
+      "何かお手伝いが必要でしたら、いつでもご連絡ください。",
+    ]
   }
 ];
 
-function MemberCard({ member, language, engContent, japContent }) {
+function MemberCard({ member, language }) {
+  const content = language === "English" ? member.engContent : member.japContent;
   return (
     <Col md={5} xs={4} className="project-card">
       <Card className="project-card-view">
@@ -45,7 +57,7 @@ function MemberCard({ member, language, engContent, japContent }) {
             {language === "English" ? member.name.English : member.name.Japanese}
           </Card.Title>
           <Card.Text style={{ textAlign: "justify", margin: '2vw 2vw' }}>
-            {(language === "English" ? engContent : japContent).map((item, idx) => (
+            {content.map((item, idx) => (
               <React.Fragment key={idx}>
                 {item}
                 <br /><br />
@@ -53,7 +65,7 @@ function MemberCard({ member, language, engContent, japContent }) {
             ))}
             <h5 className="purple">
               Gmail : &nbsp; &nbsp;
-              <a href={`gmail:${member.email}`}>{member.email}</a>
+              <a href={`mailto:${member.email}`}>{member.email}</a>
             </h5>
             <h5 className="purple">
               Telegram : &nbsp; &nbsp;
@@ -65,7 +77,13 @@ function MemberCard({ member, language, engContent, japContent }) {
           </Button>
           {"\n"}
           {"\n"}
-          <Button variant="primary" style={{ marginLeft: '1vw' }} href={member.website} target="_blank" rel="noopener noreferrer">
+          <Button
+            variant="primary"
+            style={{ marginLeft: '1vw' }}
+            href={member.website}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {language === "English" ? "Visit WebSite" : "ウェブサイトを訪問"}
           </Button>
         </Card.Body>
@@ -80,13 +98,11 @@ function Members() {
   return (
     <Container fluid className="project-section">
       <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        {members.map((member, idx) => (
+        {memberContents.map((member, idx) => (
           <MemberCard
             key={idx}
             member={member}
             language={language}
-            engContent={samirEngContent}
-            japContent={samirJapContent}
           />
         ))}
       </Row>

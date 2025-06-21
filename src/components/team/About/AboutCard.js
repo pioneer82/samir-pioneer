@@ -14,7 +14,8 @@ const CONTENT = {
       'We are a small but highly flexible team based in Japan.',
       'Samir is an experienced engineer who handles all technical aspects and implements high-quality code.',
       'Sho focuses on client communication and local operations to ensure smooth delivery for Japanese clients.',
-      'Together, we aim to build trust with clients and expand our services in the Japanese market.'
+      'Together, we aim to build trust with clients and expand our services in the Japanese market.',
+      "Top-class global development power, delivered quickly with full Japanese support."
     ]
   },
   Japanese: {

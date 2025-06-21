@@ -4,11 +4,10 @@ import { useSelector } from 'react-redux';
 
 const CONTENTS = {
   English: [
-    'We are a two-person team combining business strategy and technical expertise to deliver high-quality projects for Japanese clients.',
-    'Our team is co-founded by Sho, who operates as Japanese market lead, and Samir, who brings solid engineering skills to the table.',
-    'Always create clean and expandable code.',
-    'Our team is fully capable and qualified to handle Blogs, Portfolios, E-Commerce, Business websites, Landing Pages, Training, Project Designers, and more.',
-    'Our team respects our customers wishes and will do our best to 100% meet their needs.'
+    "We are a small, elite development team consisting of a bilingual team leader with deep insight into business in both Japanese and English, and a highly skilled engineer who has been building his career in Sweden since the age of 15 and has over five years of practical experience.",
+    "Our strengths lie not only in the technical skills honed under a strict merit- based environment overseas, but also in our three pillars: strict adherence to deadlines, polite and prompt communication, and smooth interactions in Japanese.",
+    "This allows us to bring our clients’ ideas to life in the shortest time possible.",
+    "With the flexibility and speed to handle projects both domestically and internationally, we are uniquely positioned to lead your project to success from the development side."
   ],
   Japanese: [
     '私たちは、ビジネス戦略と技術的専門知識を組み合わせて、日本のクライアントに高品質のプロジェクトを提供する2人組のチームです。',

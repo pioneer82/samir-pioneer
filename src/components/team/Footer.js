@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 const TEXT = {
   dev: {
-    English: 'Designed and Developed by Samir and Tom',
+    English: 'Designed and Developed by Samir and Sho',
     Japanese: 'サミールとトムによる設計と開発'
   },
   copyright: {

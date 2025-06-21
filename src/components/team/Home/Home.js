@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 const TEXT = {
   English: {
     greeting: "Hi There! ",
-    parts: ['WE ARE', 'ZENTECH COLLECTIVE', 'DEVELOPERS']
+    parts: ['WE ARE', ' ZENTECH COLLECTIVE ', 'DEVELOPERS']
   },
   Japanese: {
     greeting: "やあ！ ",
