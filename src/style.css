@@ -779,7 +779,7 @@ button:focus {
 .skill-icon {
   width: 4vw !important;
   height: 4vw !important;
-  margin-top: -15px !important;
+  margin-top: -1vw !important;
 }
 
 .member-name {
