@@ -74,7 +74,7 @@ const PROJECTS = [
       English: <>This system is equipped with the latest facial recognition technology and emotion detection functions. It accurately recognizes the user's facial expressions and emotions in real time, helping to provide a more personalized experience and improve security. In addition, by analyzing changes in emotions, it is possible to understand customer satisfaction and reactions, and use this information for service improvement and marketing. It is a next-generation technology that combines high accuracy and ease of use and is expected to be introduced in a variety of industries.</>,
       Japanese: <>最新の顔認証技術と感情検出機能を搭載したシステムです。リアルタイムでユーザーの表情や感情を正確に認識し、よりパーソナライズされた体験やセキュリティ向上に役立ちます。また、感情の変化を解析することで、顧客の満足度や反応を把握し、サービス改善やマーケティングにも活用可能となっております。高い精度と使いやすさを両立し、さまざまな業界での導入が期待される次世代テクノロジーです。</>
     },
-    ghLink: "https://github.com/soumyajit4419/Face_And_Emotion_Detection",
+    ghLink: "https://github.com/pioneer82/Face_And_Emotion",
     demoLink: "" // Add demo link if available
   }
 ];
